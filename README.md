@@ -14,6 +14,7 @@
 - [Selenium](https://www.selenium.dev/) - Automates browsers
 - [Cucumber](https://cucumber.io/) - Validate executable specifications
 - [Junit](https://junit.org/junit5/) - Testing framework for Java and the JVM
+- [Owner](https://owner.aeonbits.org/) - The boilerplate code in properties based configuration
 - [Intellij](https://www.jetbrains.com/pt-br/idea/) - Software development IDE
 
 ## Installation
@@ -26,6 +27,9 @@ $ git clone https://github.com/carlospmbarros/web-challenge-test
 - With intellij open, click open and go to the folder where the project was cloned and double-click
 - Wait until the build is finished and the project is ready to be used
 
+## Configuration 
+
+- In the resources/properties folder we have the _**general.properties**_ file where there are the global settings that are being used in the project 
 
 ## Execution
 
