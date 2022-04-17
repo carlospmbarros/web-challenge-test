@@ -3,7 +3,10 @@ package dev.carlosbarros.core;
 import dev.carlosbarros.enums.Browser;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -11,7 +14,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -69,13 +71,10 @@ public class Driver {
             case IE:
                 startIE();
                 break;
-            case SAFARI:
-                startSafari();
-                break;
         }
 
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        driver.manage().window().setSize(new Dimension(1280, 800));
+        driver.manage().window().maximize();
     }
 
     private void startIE() {
@@ -90,8 +89,7 @@ public class Driver {
 
     private void startSafari(){
         WebDriverManager.safaridriver().setup();
-        SafariOptions safariOptions = new SafariOptions();
-        driver = new SafariDriver(safariOptions);
+        driver = new SafariDriver();
     }
     private void startFirefox() {
         WebDriverManager.firefoxdriver().setup();

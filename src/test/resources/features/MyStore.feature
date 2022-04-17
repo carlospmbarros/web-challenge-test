@@ -6,7 +6,7 @@ Funcionalidade: Adicionar produtos no carrinho
       | email    | datumqatest@soprock.com |
       | password | datum2021               |
 
-  @adicionaProdutos
+  @adicionaProduto
   Cenario: adiciono produtos
 
     Dado que esteja na pagina principal de My Store

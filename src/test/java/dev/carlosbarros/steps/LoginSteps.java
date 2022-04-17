@@ -4,6 +4,8 @@ import dev.carlosbarros.core.Driver;
 import dev.carlosbarros.enums.Browser;
 import dev.carlosbarros.pages.LoginPage;
 import dev.carlosbarros.pages.MyStorePage;
+import dev.carlosbarros.support.ConfigManager;
+import dev.carlosbarros.support.ServerConfig;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -20,9 +22,11 @@ public class LoginSteps {
     MyStorePage myStorePage;
     LoginPage loginPage;
 
+    ServerConfig properties = ConfigManager.getConfiguration();
+
     @Before
     public void iniciaNavegador(Scenario cenario){
-        new Driver(Browser.EDGE);
+        new Driver(Browser.CHROME);
         Driver.setNomeCenario(cenario.getName());
         Driver.criaDiretorio();
 
@@ -40,7 +44,7 @@ public class LoginSteps {
 
     @Dado("que esteja na pagina principal de My Store")
     public void queEstejaNaPaginaPrincipalDeMyStore() {
-        Driver.getDriver().get("http://automationpractice.com");
+        Driver.getDriver().get(properties.BaseUrl());
         myStorePage = new MyStorePage();
     }
     @Quando("acesso a pagina de login")

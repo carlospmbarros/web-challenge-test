@@ -35,7 +35,7 @@ $ mvn test
 ```
 - Using tags in execution through the terminal, where the item @tag Name will be replaced by the tag found in the .FEATURE file inside the resources/features folder, ex: **@addProduct**
 ```shell
-$ mvn test -Dcucumber.options="--tags @tag Name"
+$ mvn test -Dcucumber.options="--tags @adicionaProduto"
 ```
 - Running your tests via project runner
 - Before doing the procedure below, open the RunnerTest file and validate that the tag that will be used is the same one associated with the test scenarios within the .FEATURE files
