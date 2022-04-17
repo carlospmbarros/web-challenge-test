@@ -1,7 +1,7 @@
 #language:pt
-  @Login
+  @allTests
   Funcionalidade: login
-
+    @login
     Cenario: Realizar login no sistema
       Dado que esteja na pagina principal de My Store
       Quando acesso a pagina de login

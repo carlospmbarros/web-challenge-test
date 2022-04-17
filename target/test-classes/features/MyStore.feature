@@ -1,4 +1,5 @@
 #language:pt
+@allTests
 Funcionalidade: Adicionar produtos no carrinho
 
   Contexto:

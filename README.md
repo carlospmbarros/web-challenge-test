@@ -39,11 +39,28 @@ $ mvn test
 ```
 - Using tags in execution through the terminal, where the item @tag Name will be replaced by the tag found in the .FEATURE file inside the resources/features folder, ex: **@addProduct**
 ```shell
+$ mvn test -Dcucumber.options="--tags @TagName"
+```
+- Using tag to add a product in ecommerce @adicionaProduto
+```shell
 $ mvn test -Dcucumber.options="--tags @adicionaProduto"
 ```
+- Using tag to access e-commerce @Login
+```shell
+$ mvn test -Dcucumber.options="--tags @Login"
+```
+- Using @allTests tag to run all tests and opening Allure Report
+```shell
+$ mvn test -Dcucumber.options="--tags @allTests" && allure serve allure-results
+```
+
 - Running your tests via project runner
 - Before doing the procedure below, open the RunnerTest file and validate that the tag that will be used is the same one associated with the test scenarios within the .FEATURE files
 -- Go to the runner folder that is in the path _**src/test/java/dev/carlosbarros/runner/**_ and with the right button of the project click on the **_RunnerTest.java_** class and click run ... this will make the project run through cucumber runner
+- After running the tests through the runner, open the terminal and type the command below, so the allure report that was created after execution
+```shell
+$ allure serve allure-results
+```
 
 ### Folders
 
