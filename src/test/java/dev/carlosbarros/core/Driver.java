@@ -1,6 +1,8 @@
 package dev.carlosbarros.core;
 
 import dev.carlosbarros.enums.Browser;
+import dev.carlosbarros.support.ConfigManager;
+import dev.carlosbarros.support.ServerConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -13,6 +15,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -20,7 +24,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+import static org.openqa.selenium.remote.DesiredCapabilities.*;
 
 public class Driver {
     private static WebDriver driver;
@@ -28,6 +37,10 @@ public class Driver {
     private static String nomeCenario;
     private static File diretorio;
     private static int numPrint;
+    DesiredCapabilities cap;
+    String browser = "chrome";
+
+    ServerConfig properties = ConfigManager.getConfiguration();
 
     public static File getDiretorio() {
         return diretorio;
@@ -134,9 +147,6 @@ public class Driver {
             } catch (InterruptedException e) {
 
             }
-
-
         }
     }
-
 }

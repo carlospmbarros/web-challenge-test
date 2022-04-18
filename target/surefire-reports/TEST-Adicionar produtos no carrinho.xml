@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Adicionar produtos no carrinho" time="14.812" tests="2" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="webdriver.chrome.driver" value="/Users/carlos.barros/.cache/selenium/chromedriver/mac64/100.0.4896.60/chromedriver"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/carlos.barros/Downloads/web-challenge-test-main/target/test-classes:/Users/carlos.barros/Downloads/web-challenge-test-main/target/classes:/Users/carlos.barros/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/carlos.barros/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/carlos.barros/.m2/repository/io/qameta/allure/allure-junit4/2.17.3/allure-junit4-2.17.3.jar:/Users/carlos.barros/.m2/repository/io/qameta/allure/allure-java-commons/2.17.3/allure-java-commons-2.17.3.jar:/Users/carlos.barros/.m2/repository/io/qameta/allure/allure-model/2.17.3/allure-model-2.17.3.jar:/Users/carlos.barros/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.17.3/allure-cucumber7-jvm-2.17.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/gherkin/22.0.0/gherkin-22.0.0.jar:/Users/carlos.barros/.m2/repository/io/cucumber/messages/17.1.1/messages-17.1.1.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-java/4.1.3/selenium-java-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-api/4.1.3/selenium-api-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.1.3/selenium-chrome-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/carlos.barros/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/carlos.barros/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/carlos.barros/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/carlos.barros/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/carlos.barros/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/carlos.barros/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/carlos.barros/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/carlos.barros/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/carlos.barros/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.1.3/selenium-chromium-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-json/4.1.3/selenium-json-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.1.3/selenium-devtools-v85-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v97/4.1.3/selenium-devtools-v97-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v98/4.1.3/selenium-devtools-v98-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v99/4.1.3/selenium-devtools-v99-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.1.3/selenium-edge-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.1.3/selenium-firefox-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.1.3/selenium-ie-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.1.3/selenium-opera-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.1.3/selenium-remote-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-buffer/4.1.75.Final/netty-buffer-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-codec-http/4.1.75.Final/netty-codec-http-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-codec/4.1.75.Final/netty-codec-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-handler/4.1.75.Final/netty-handler-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-common/4.1.75.Final/netty-common-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.75.Final/netty-transport-classes-epoll-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.75.Final/netty-transport-classes-kqueue-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-native-epoll/4.1.75.Final/netty-transport-native-epoll-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.75.Final/netty-transport-native-kqueue-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.75.Final/netty-transport-native-unix-common-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport/4.1.75.Final/netty-transport-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-resolver/4.1.75.Final/netty-resolver-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-api/1.12.0/opentelemetry-api-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-context/1.12.0/opentelemetry-context-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.12.0/opentelemetry-exporter-logging-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.12.0-alpha/opentelemetry-sdk-metrics-1.12.0-alpha.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.12.0-alpha/opentelemetry-sdk-logs-1.12.0-alpha.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.12.0/opentelemetry-sdk-common-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.12.0/opentelemetry-sdk-extension-autoconfigure-spi-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.12.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.12.0-alpha.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.12.0/opentelemetry-sdk-trace-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.12.0/opentelemetry-sdk-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.12.0-alpha/opentelemetry-semconv-1.12.0-alpha.jar:/Users/carlos.barros/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/carlos.barros/.m2/repository/net/bytebuddy/byte-buddy/1.12.8/byte-buddy-1.12.8.jar:/Users/carlos.barros/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/carlos.barros/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/carlos.barros/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/carlos.barros/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/carlos.barros/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/carlos.barros/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-http/4.1.3/selenium-http-4.1.3.jar:/Users/carlos.barros/.m2/repository/dev/failsafe/failsafe/3.2.3/failsafe-3.2.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.1.3/selenium-safari-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-support/4.1.3/selenium-support-4.1.3.jar:/Users/carlos.barros/.m2/repository/io/github/bonigarcia/webdrivermanager/5.1.1/webdrivermanager-5.1.1.jar:/Users/carlos.barros/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/carlos.barros/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/carlos.barros/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/Users/carlos.barros/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/Users/carlos.barros/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/Users/carlos.barros/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/carlos.barros/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/carlos.barros/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/carlos.barros/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/carlos.barros/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/carlos.barros/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/carlos.barros/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/carlos.barros/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/carlos.barros/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/Users/carlos.barros/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/Users/carlos.barros/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/carlos.barros/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/carlos.barros/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/carlos.barros/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/Users/carlos.barros/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/Users/carlos.barros/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar:/Users/carlos.barros/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-java/7.2.3/cucumber-java-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-core/7.2.3/cucumber-core-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-gherkin/7.2.3/cucumber-gherkin-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.2.3/cucumber-gherkin-messages-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-expressions/15.0.1/cucumber-expressions-15.0.1.jar:/Users/carlos.barros/.m2/repository/io/cucumber/datatable/7.2.3/datatable-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-plugin/7.2.3/cucumber-plugin-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/docstring/7.2.3/docstring-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/html-formatter/17.0.0/html-formatter-17.0.0.jar:/Users/carlos.barros/.m2/repository/io/cucumber/ci-environment/8.1.0/ci-environment-8.1.0.jar:/Users/carlos.barros/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-junit/7.2.3/cucumber-junit-7.2.3.jar:/Users/carlos.barros/.m2/repository/org/aeonbits/owner/owner/1.0.12/owner-1.0.12.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/carlos.barros/Downloads/web-challenge-test-main/target/surefire/surefirebooter10182918429945259357.jar /Users/carlos.barros/Downloads/web-challenge-test-main/target/surefire 2022-04-17T22-55-38_887-jvmRun1 surefire1507224973920232462tmp surefire_01678388312811477680tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/carlos.barros/Downloads/web-challenge-test-main/target/test-classes:/Users/carlos.barros/Downloads/web-challenge-test-main/target/classes:/Users/carlos.barros/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/carlos.barros/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/carlos.barros/.m2/repository/io/qameta/allure/allure-junit4/2.17.3/allure-junit4-2.17.3.jar:/Users/carlos.barros/.m2/repository/io/qameta/allure/allure-java-commons/2.17.3/allure-java-commons-2.17.3.jar:/Users/carlos.barros/.m2/repository/io/qameta/allure/allure-model/2.17.3/allure-model-2.17.3.jar:/Users/carlos.barros/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.17.3/allure-cucumber7-jvm-2.17.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/gherkin/22.0.0/gherkin-22.0.0.jar:/Users/carlos.barros/.m2/repository/io/cucumber/messages/17.1.1/messages-17.1.1.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-java/4.1.3/selenium-java-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-api/4.1.3/selenium-api-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.1.3/selenium-chrome-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/carlos.barros/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/carlos.barros/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/carlos.barros/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/carlos.barros/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/carlos.barros/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/carlos.barros/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/carlos.barros/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/carlos.barros/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/carlos.barros/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.1.3/selenium-chromium-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-json/4.1.3/selenium-json-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.1.3/selenium-devtools-v85-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v97/4.1.3/selenium-devtools-v97-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v98/4.1.3/selenium-devtools-v98-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v99/4.1.3/selenium-devtools-v99-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.1.3/selenium-edge-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.1.3/selenium-firefox-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.1.3/selenium-ie-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.1.3/selenium-opera-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.1.3/selenium-remote-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-buffer/4.1.75.Final/netty-buffer-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-codec-http/4.1.75.Final/netty-codec-http-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-codec/4.1.75.Final/netty-codec-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-handler/4.1.75.Final/netty-handler-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-common/4.1.75.Final/netty-common-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.75.Final/netty-transport-classes-epoll-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.75.Final/netty-transport-classes-kqueue-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-native-epoll/4.1.75.Final/netty-transport-native-epoll-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.75.Final/netty-transport-native-kqueue-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.75.Final/netty-transport-native-unix-common-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport/4.1.75.Final/netty-transport-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-resolver/4.1.75.Final/netty-resolver-4.1.75.Final.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-api/1.12.0/opentelemetry-api-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-context/1.12.0/opentelemetry-context-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.12.0/opentelemetry-exporter-logging-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.12.0-alpha/opentelemetry-sdk-metrics-1.12.0-alpha.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.12.0-alpha/opentelemetry-sdk-logs-1.12.0-alpha.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.12.0/opentelemetry-sdk-common-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.12.0/opentelemetry-sdk-extension-autoconfigure-spi-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.12.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.12.0-alpha.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.12.0/opentelemetry-sdk-trace-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.12.0/opentelemetry-sdk-1.12.0.jar:/Users/carlos.barros/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.12.0-alpha/opentelemetry-semconv-1.12.0-alpha.jar:/Users/carlos.barros/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/carlos.barros/.m2/repository/net/bytebuddy/byte-buddy/1.12.8/byte-buddy-1.12.8.jar:/Users/carlos.barros/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/carlos.barros/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/carlos.barros/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/carlos.barros/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/carlos.barros/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/carlos.barros/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/carlos.barros/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-http/4.1.3/selenium-http-4.1.3.jar:/Users/carlos.barros/.m2/repository/dev/failsafe/failsafe/3.2.3/failsafe-3.2.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.1.3/selenium-safari-driver-4.1.3.jar:/Users/carlos.barros/.m2/repository/org/seleniumhq/selenium/selenium-support/4.1.3/selenium-support-4.1.3.jar:/Users/carlos.barros/.m2/repository/io/github/bonigarcia/webdrivermanager/5.1.1/webdrivermanager-5.1.1.jar:/Users/carlos.barros/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/carlos.barros/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/carlos.barros/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/Users/carlos.barros/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/Users/carlos.barros/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/Users/carlos.barros/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/carlos.barros/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/carlos.barros/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/carlos.barros/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/carlos.barros/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/carlos.barros/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/carlos.barros/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/carlos.barros/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/carlos.barros/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/Users/carlos.barros/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/Users/carlos.barros/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/Users/carlos.barros/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/carlos.barros/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/carlos.barros/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/Users/carlos.barros/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/Users/carlos.barros/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar:/Users/carlos.barros/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-java/7.2.3/cucumber-java-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-core/7.2.3/cucumber-core-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-gherkin/7.2.3/cucumber-gherkin-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.2.3/cucumber-gherkin-messages-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-expressions/15.0.1/cucumber-expressions-15.0.1.jar:/Users/carlos.barros/.m2/repository/io/cucumber/datatable/7.2.3/datatable-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-plugin/7.2.3/cucumber-plugin-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/docstring/7.2.3/docstring-7.2.3.jar:/Users/carlos.barros/.m2/repository/io/cucumber/html-formatter/17.0.0/html-formatter-17.0.0.jar:/Users/carlos.barros/.m2/repository/io/cucumber/ci-environment/8.1.0/ci-environment-8.1.0.jar:/Users/carlos.barros/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/carlos.barros/.m2/repository/io/cucumber/cucumber-junit/7.2.3/cucumber-junit-7.2.3.jar:/Users/carlos.barros/.m2/repository/org/aeonbits/owner/owner/1.0.12/owner-1.0.12.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/carlos.barros"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/carlos.barros/Downloads/web-challenge-test-main"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/carlos.barros/Downloads/web-challenge-test-main/target/surefire/surefirebooter10182918429945259357.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.12+8-LTS-237"/>
+    <property name="user.name" value="carlos.barros"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/Users/carlos.barros/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/5f/qz9m1wb56876ql_szk235gjw0000gn/T/"/>
+    <property name="java.version" value="11.0.12"/>
+    <property name="user.dir" value="/Users/carlos.barros/Downloads/web-challenge-test-main"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/carlos.barros/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="adiciono produtos" classname="Adicionar produtos no carrinho" time="14.812">
+    <error message="invalid session id&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;MacBook-Pro-de-Carlos.local&apos;, ip: &apos;2804:14d:4cd6:b9b4:0:0:0:bdc8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [82e19e16a1921fb2896e3b0be79fc260, clickElement {id=80d3fbee-820d-4553-ace4-52f7145b398d}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/5f/qz9m1wb5687...}, goog:chromeOptions: {debuggerAddress: localhost:60949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60949/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (82e19e16a1921fb2896e3b0be79fc260)] -&gt; css selector: #SubmitLogin]&#10;Session ID: 82e19e16a1921fb2896e3b0be79fc260" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'MacBook-Pro-de-Carlos.local', ip: '2804:14d:4cd6:b9b4:0:0:0:bdc8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82e19e16a1921fb2896e3b0be79fc260, clickElement {id=80d3fbee-820d-4553-ace4-52f7145b398d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/5f/qz9m1wb5687...}, goog:chromeOptions: {debuggerAddress: localhost:60949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60949/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (82e19e16a1921fb2896e3b0be79fc260)] -> css selector: #SubmitLogin]
+Session ID: 82e19e16a1921fb2896e3b0be79fc260
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at dev.carlosbarros.pages.LoginPage.clickSignIn(LoginPage.java:23)
+	at dev.carlosbarros.steps.LoginSteps.relizoOLoginComOsDados(LoginSteps.java:62)
+	at dev.carlosbarros.steps.LoginSteps.queEstejaLogadoNaPaginaMyStoreComOsDados(LoginSteps.java:73)
+	at ✽.que esteja logado na pagina My Store com os dados(file:///Users/carlos.barros/Downloads/web-challenge-test-main/src/test/resources/features/MyStore.feature:6)
+]]></error>
+    <system-out><![CDATA[
+@allTests @smokeTest2 @adicionaProduto
+Cenario: adiciono produtos                                  &amp#27;[90m# src/test/resources/features/MyStore.feature:11&amp#27;[0m
+  &amp#27;[31mDado &amp#27;[0m&amp#27;[31mque esteja logado na pagina My Store com os dados&amp#27;[0m    &amp#27;[90m# dev.carlosbarros.steps.LoginSteps.queEstejaLogadoNaPaginaMyStoreComOsDados(java.util.Map<java.lang.String, java.lang.String>)&amp#27;[0m
+    | email    | datumqatest@soprock.com |
+    | password | datum2021               |
+      &amp#27;[31morg.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'MacBook-Pro-de-Carlos.local', ip: '2804:14d:4cd6:b9b4:0:0:0:bdc8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82e19e16a1921fb2896e3b0be79fc260, clickElement {id=80d3fbee-820d-4553-ace4-52f7145b398d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/5f/qz9m1wb5687...}, goog:chromeOptions: {debuggerAddress: localhost:60949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60949/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (82e19e16a1921fb2896e3b0be79fc260)] -> css selector: #SubmitLogin]
+Session ID: 82e19e16a1921fb2896e3b0be79fc260
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at dev.carlosbarros.pages.LoginPage.clickSignIn(LoginPage.java:23)
+	at dev.carlosbarros.steps.LoginSteps.relizoOLoginComOsDados(LoginSteps.java:62)
+	at dev.carlosbarros.steps.LoginSteps.queEstejaLogadoNaPaginaMyStoreComOsDados(LoginSteps.java:73)
+	at ✽.que esteja logado na pagina My Store com os dados(file:///Users/carlos.barros/Downloads/web-challenge-test-main/src/test/resources/features/MyStore.feature:6)
+&amp#27;[0m
+  &amp#27;[36mDado &amp#27;[0m&amp#27;[36mque esteja na pagina principal de My Store&amp#27;[0m           &amp#27;[90m# dev.carlosbarros.steps.LoginSteps.queEstejaNaPaginaPrincipalDeMyStore()&amp#27;[0m
+  &amp#27;[36mQuando &amp#27;[0m&amp#27;[36mseleciono o produto alterando as opcoes do produto&amp#27;[0m &amp#27;[90m# dev.carlosbarros.steps.MyStoreSteps.selecionoOProdutoAlterandoAsOpcoesDoProduto(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)&amp#27;[0m
+    | nome                        | quantidade | tamanho | cor     |
+    | Printed Chiffon Dress       | [empty]    | M       | verde   |
+    | Faded Short Sleeve T-shirts | [empty]    | [empty] | azul    |
+    | Blouse                      | 2          | [empty] | [empty] |
+    | Printed Dress               | [empty]    | [empty] | [empty] |
+  &amp#27;[36mEntao &amp#27;[0m&amp#27;[36mvalido que possuo &amp#27;[0m&amp#27;[36m&amp#27;[1m"5"&amp#27;[0m&amp#27;[36m itens no carrinho&amp#27;[0m             &amp#27;[90m# dev.carlosbarros.steps.MyStoreSteps.validoQuePossuoItensNoCarrinho(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'MacBook-Pro-de-Carlos.local', ip: '2804:14d:4cd6:b9b4:0:0:0:bdc8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82e19e16a1921fb2896e3b0be79fc260, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/5f/qz9m1wb5687...}, goog:chromeOptions: {debuggerAddress: localhost:60949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60949/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 82e19e16a1921fb2896e3b0be79fc260
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:148)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:351)
+	at dev.carlosbarros.core.Driver.printScreen(Driver.java:66)
+	at dev.carlosbarros.steps.LoginSteps.fechaNavegador(LoginSteps.java:41)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:49364
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:124)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:351)
+	at dev.carlosbarros.core.Driver.printScreen(Driver.java:66)
+	at dev.carlosbarros.steps.LoginSteps.fechaNavegador(LoginSteps.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:101)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:398)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:49364
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:49364
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 51269
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr 17, 2022 10:55:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+abr 17, 2022 10:55:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 100, so returning the closest version found: 99
+abr 17, 2022 10:55:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 100 of 99
+]]></system-err>
+  </testcase>
+  <testcase name="adiciono produtos" classname="Adicionar produtos no carrinho" time="0">
+    <error message="The driver server has unexpectedly died!&#10;Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;&#10;System info: host: &apos;MacBook-Pro-de-Carlos.local&apos;, ip: &apos;2804:14d:4cd6:b9b4:0:0:0:bdc8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [82e19e16a1921fb2896e3b0be79fc260, screenshot {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/5f/qz9m1wb5687...}, goog:chromeOptions: {debuggerAddress: localhost:60949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60949/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 82e19e16a1921fb2896e3b0be79fc260" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+The driver server has unexpectedly died!
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'MacBook-Pro-de-Carlos.local', ip: '2804:14d:4cd6:b9b4:0:0:0:bdc8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82e19e16a1921fb2896e3b0be79fc260, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/5f/qz9m1wb5687...}, goog:chromeOptions: {debuggerAddress: localhost:60949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60949/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 82e19e16a1921fb2896e3b0be79fc260
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:148)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:351)
+	at dev.carlosbarros.core.Driver.printScreen(Driver.java:66)
+	at dev.carlosbarros.steps.LoginSteps.fechaNavegador(LoginSteps.java:41)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:49364
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:124)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:351)
+	at dev.carlosbarros.core.Driver.printScreen(Driver.java:66)
+	at dev.carlosbarros.steps.LoginSteps.fechaNavegador(LoginSteps.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:101)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:398)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:49364
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/0:0:0:0:0:0:0:1:49364
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></error>
+  </testcase>
+</testsuite>

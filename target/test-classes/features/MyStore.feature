@@ -1,5 +1,5 @@
 #language:pt
-@allTests
+@allTests @smokeTest2
 Funcionalidade: Adicionar produtos no carrinho
 
   Contexto:

@@ -13,9 +13,13 @@ import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.IOException;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 
 public class LoginSteps {
@@ -29,7 +33,6 @@ public class LoginSteps {
         new Driver(Browser.CHROME);
         Driver.setNomeCenario(cenario.getName());
         Driver.criaDiretorio();
-
     }
 
     @After
@@ -70,7 +73,4 @@ public class LoginSteps {
         relizoOLoginComOsDados(map);
 
     }
-
-
-
 }

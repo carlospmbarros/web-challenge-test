@@ -1,8 +1,8 @@
 #language:pt
-  @allTests
+  @allTests @smokeTest1
   Funcionalidade: login
     @login
-    Cenario: Realizar login no sistema
+    Cenario: [001] Realizar login no sistema
       Dado que esteja na pagina principal de My Store
       Quando acesso a pagina de login
       E relizo o login com os dados
